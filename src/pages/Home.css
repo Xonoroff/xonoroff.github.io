@@ -1,0 +1,108 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.home-content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.about-section {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.bio {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.bio:last-child {
+  margin-bottom: 0;
+}
+
+.education-section {
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.education-section h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.education-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.education-item {
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.education-degree {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.education-field {
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.education-school {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+.contact {
+  margin-bottom: 1rem;
+}
+
+.contact a {
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+
+.contact a:hover {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.separator {
+  color: var(--text-secondary);
+  margin: 0 0.75rem;
+  opacity: 0.5;
+}
+
+.location {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
