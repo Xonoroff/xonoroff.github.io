@@ -5,3 +5,4 @@ dist
 tmpclaude-*
 .claude/
 portfolio_cvs/
+*.tsbuildinfo
