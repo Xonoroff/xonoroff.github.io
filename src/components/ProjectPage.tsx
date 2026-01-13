@@ -71,14 +71,6 @@ interface ProjectPageProps {
   project: ProjectPageData
 }
 
-const achievementOrder: Record<AchievementType, number> = {
-  technical: 1,
-  scale: 2,
-  performance: 3,
-  delivery: 4,
-  managerial: 5
-}
-
 export function ProjectPage({ project }: ProjectPageProps) {
   const [filterRole, setFilterRole] = useState<string>('all')
   const [filterAchievement, setFilterAchievement] = useState<string>('all')
