@@ -16,7 +16,7 @@ function Unity() {
     <div className="unity-page">
       <div className="unity-content">
         <h1>Pavlo Prokopov</h1>
-        <p className="subtitle">Unity Developer</p>
+        <p className="subtitle">Team Leader | Tech Leader | Senior Unity Developer</p>
 
         <div className="about-section">
           <p className="bio">
