@@ -7,7 +7,7 @@ export const allSkillCards: SkillCardData[] = [
   },
   {
     title: 'Unity & Client Development',
-    skills: ['Unity', 'Zenject', 'UniTask', 'Addressables', 'MVP / VIPER', 'iOS', 'Android', 'Editor Tooling']
+    skills: [ 'Unity', 'Zenject', 'UniTask', 'Addressables', 'MVP / VIPER', 'iOS', 'Android', 'Editor Tooling', 'TypeScript']
   },
   {
     title: 'Data & Caching',
@@ -15,7 +15,7 @@ export const allSkillCards: SkillCardData[] = [
   },
   {
     title: 'Architecture & Design',
-    skills: ['System Design', 'API Design', 'Microservices', 'Event-Driven', 'Pub-Sub', 'SOLID', 'PlantUML', 'Draw.io']
+    skills: ['System Design', 'API Design', 'Microservices', 'Event-Driven', 'Pub-Sub', 'SOLID', 'PlantUML', 'Draw.io', 'HLD', 'LLD', 'QA', 'ADR']
   },
   {
     title: 'Cloud & DevOps',

@@ -82,6 +82,15 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+.project-card.no-link {
+  cursor: default;
+}
+
+.project-card.no-link:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 .project-card-thumbnail {
   width: 200px;
   min-width: 200px;

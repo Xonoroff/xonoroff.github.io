@@ -35,9 +35,9 @@ function Unity() {
         <div className="projects-section">
           <h2>Projects</h2>
           <div className="projects-list">
-            {unityProjectsList.map((project) => (
-              <Link key={project.slug} to={`/unity/${project.slug}`} className="project-card-wrapper">
-                <div className="project-card">
+            {unityProjectsList.map((project) => {
+              const cardContent = (
+                <div className={`project-card ${!project.hasDetails ? 'no-link' : ''}`}>
                   {project.thumbnail && (
                     <div className="project-card-thumbnail">
                       <img src={project.thumbnail} alt={project.title} />
@@ -56,11 +56,23 @@ function Unity() {
                         <span key={tag} className="skill-tag">{tag}</span>
                       ))}
                     </div>
-                    <span className="project-card-link">View Details</span>
+                    {project.hasDetails && (
+                      <span className="project-card-link">View Details</span>
+                    )}
                   </div>
                 </div>
-              </Link>
-            ))}
+              )
+
+              return project.hasDetails ? (
+                <Link key={project.slug} to={`/unity/${project.slug}`} className="project-card-wrapper">
+                  {cardContent}
+                </Link>
+              ) : (
+                <div key={project.slug} className="project-card-wrapper">
+                  {cardContent}
+                </div>
+              )
+            })}
           </div>
         </div>
 

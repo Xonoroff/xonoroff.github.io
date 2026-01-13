@@ -76,6 +76,64 @@
   letter-spacing: 0.5px;
 }
 
+.use-cases-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.use-cases-header h2 {
+  margin-bottom: 0;
+}
+
+.filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-group label {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.filter-select {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 140px;
+}
+
+.filter-select:hover {
+  border-color: var(--text-secondary);
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.filter-select option {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
 .highlights-list {
   list-style: none;
   padding: 0;
@@ -137,7 +195,72 @@
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.use-case-role,
+.use-case-responsibilities {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.use-case-role strong,
+.use-case-responsibilities strong {
+  color: var(--text-primary);
+}
+
+.use-case-achievement {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0;
+  border-radius: 0 4px 4px 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.achievement-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* Technical achievements - blue */
+.achievement-technical {
+  background: rgba(59, 130, 246, 0.1);
+  border-left: 3px solid #3b82f6;
+}
+
+/* Managerial achievements - purple */
+.achievement-managerial {
+  background: rgba(139, 92, 246, 0.1);
+  border-left: 3px solid #8b5cf6;
+}
+
+/* Delivery achievements - green */
+.achievement-delivery {
+  background: rgba(34, 197, 94, 0.1);
+  border-left: 3px solid #22c55e;
+}
+
+/* Performance achievements - orange */
+.achievement-performance {
+  background: rgba(249, 115, 22, 0.1);
+  border-left: 3px solid #f97316;
+}
+
+/* Scale achievements - yellow */
+.achievement-scale {
+  background: rgba(234, 179, 8, 0.1);
+  border-left: 3px solid #eab308;
+}
+
+.use-case-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-top: 1rem;
 }
 
 .use-case-card > p {
