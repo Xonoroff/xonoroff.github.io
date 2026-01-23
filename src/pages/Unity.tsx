@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
 import './Unity.css'
 import { SkillCards } from '../components/SkillCard'
+import { ProjectList } from '../components/ProjectListCard'
 import { getSkillCards } from '../data/skills'
 import { unityProjectsList } from '../data/projects-unity'
 
@@ -34,46 +34,7 @@ function Unity() {
 
         <div className="projects-section">
           <h2>Projects</h2>
-          <div className="projects-list">
-            {unityProjectsList.map((project) => {
-              const cardContent = (
-                <div className={`project-card ${!project.hasDetails ? 'no-link' : ''}`}>
-                  {project.thumbnail && (
-                    <div className="project-card-thumbnail">
-                      <img src={project.thumbnail} alt={project.title} />
-                    </div>
-                  )}
-                  <div className="project-card-content">
-                    <div className="project-card-header">
-                      <h3>{project.title}</h3>
-                      <span className="project-card-meta">
-                        {project.company} | {project.period}
-                      </span>
-                    </div>
-                    <p className="project-card-description">{project.description}</p>
-                    <div className="project-card-tags">
-                      {project.tags.map((tag) => (
-                        <span key={tag} className="skill-tag">{tag}</span>
-                      ))}
-                    </div>
-                    {project.hasDetails && (
-                      <span className="project-card-link">View Details</span>
-                    )}
-                  </div>
-                </div>
-              )
-
-              return project.hasDetails ? (
-                <Link key={project.slug} to={`/unity/${project.slug}`} className="project-card-wrapper">
-                  {cardContent}
-                </Link>
-              ) : (
-                <div key={project.slug} className="project-card-wrapper">
-                  {cardContent}
-                </div>
-              )
-            })}
-          </div>
+          <ProjectList projects={unityProjectsList} basePath="/unity" linkText="Use Cases" />
         </div>
 
         <div className="contact">

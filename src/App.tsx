@@ -3,6 +3,7 @@ import { ScrollToTop } from './components/ScrollToTop'
 import Home from './pages/Home'
 import Unity from './pages/Unity'
 import Backend from './pages/Backend'
+import Manager from './pages/Manager'
 
 // Unity project pages
 import DiceDreamsUnity from './pages/projects/unity/DiceDreams'
@@ -14,6 +15,11 @@ import ScatterSlotsUnity from './pages/projects/unity/ScatterSlots'
 
 // Backend project pages
 import DiceDreamsBackend from './pages/projects/backend/DiceDreams'
+
+// Engineering Manager project pages
+import DiceDreamsManager from './pages/projects/manager/DiceDreams'
+import YellowStoneManager from './pages/projects/manager/YellowStone'
+import SlotsEraManager from './pages/projects/manager/SlotsEra'
 
 function App() {
   return (
@@ -34,6 +40,12 @@ function App() {
 
       {/* Backend project pages */}
       <Route path="/backend/dice-dreams" element={<DiceDreamsBackend />} />
+
+      {/* Engineering Manager pages */}
+      <Route path="/engineering-manager" element={<Manager />} />
+      <Route path="/engineering-manager/dice-dreams" element={<DiceDreamsManager />} />
+      <Route path="/engineering-manager/yellow-stone" element={<YellowStoneManager />} />
+      <Route path="/engineering-manager/slots-era" element={<SlotsEraManager />} />
     </Routes>
     </>
   )

@@ -28,6 +28,18 @@ export const allSkillCards: SkillCardData[] = [
   {
     title: 'Practices & Methodologies',
     skills: ['Unit Testing', 'TDD', 'BDD', 'DDD', 'Code Review', 'Agile', 'Scrum']
+  },
+  {
+    title: 'Engineering Management',
+    skills: ['Team Leadership', 'Hiring', 'Mentoring', '1:1s', 'Performance Reviews', 'Career Development', 'Team Scaling']
+  },
+  {
+    title: 'Delivery & Planning',
+    skills: ['Roadmap Planning', 'Effort Estimation', 'Milestone Tracking', 'Release Management', 'Risk Management', 'Stakeholder Alignment']
+  },
+  {
+    title: 'Process & Governance',
+    skills: ['Onboarding Design', 'Technical Standards', 'Code Review Process', 'ADR', 'Incident Management', 'Cross-Team Coordination']
   }
 ]
 

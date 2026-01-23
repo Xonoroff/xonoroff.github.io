@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
 import './Backend.css'
 import { SkillCards } from '../components/SkillCard'
+import { ProjectList } from '../components/ProjectListCard'
 import { getSkillCards } from '../data/skills'
 import { backendProjectsList } from '../data/projects-backend'
 
@@ -36,27 +36,7 @@ function Backend() {
 
         <div className="projects-section">
           <h2>Projects</h2>
-          <div className="projects-list">
-            {backendProjectsList.map((project) => (
-              <div key={project.slug} className="project-card">
-                <div className="project-card-header">
-                  <h3>{project.title}</h3>
-                  <span className="project-card-meta">
-                    {project.company} | {project.period}
-                  </span>
-                </div>
-                <p className="project-card-description">{project.description}</p>
-                <div className="project-card-tags">
-                  {project.tags.map((tag) => (
-                    <span key={tag} className="skill-tag">{tag}</span>
-                  ))}
-                </div>
-                <Link to={`/backend/${project.slug}`} className="project-card-link">
-                  View Details
-                </Link>
-              </div>
-            ))}
-          </div>
+          <ProjectList projects={backendProjectsList} basePath="/backend" linkText="View Details" />
         </div>
 
         <div className="contact">
